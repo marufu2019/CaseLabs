@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CaseLab — modern phone cases and accessories." />
+
+    <title>Phone Cases</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="script.js"></script> -->
+</head>
+
+<body>
+    <nav>
+        <div class="container nav-inner">
+            <a class="logo" href="#">
+                <span class="logo-mark"> CL </span> CASELAB
+            </a>
+
+            <div class="nav-links">
+                <a href="#shop">Shop</a>
+
+                <a href="#collections"> Collections </a>
+
+                <a href="#about"> About </a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+            ☾
+          </button>
+
+                <button class="outline-btn" id="loginBtn">Login</button>
+
+                <button class="primary-btn cart" id="cartBtn">
+            Bag
+
+            <span class="cart-count" id="cartCount"> 0 </span>
+          </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- =========================================
+       MAIN
+  ========================================= -->
+
+    <main>
+        <!-- HERO -->
+
+        <section class="hero container">
+            <div class="hero-panel">
+                <div class="hero-copy">
+                    <div class="eyebrow">Designed for everyday carry</div>
+
+                    <h1>
+                        Protect
+                        <br />
+
+                        <span> your </span>
+
+                        <br /> style.
+                    </h1>
+
+                    <p>
+                        Minimal phone cases made for people who care about good design, comfortable materials and the little details.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a class="primary-btn" href="#shop"> Explore cases ↗ </a>
+
+                        <button class="outline-btn" id="heroLogin">Join CaseLab</button>
+                    </div>
+                </div>
+
+                <!-- HERO VISUAL -->
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="orb"></div>
+
+                    <!-- PHONE 1 -->
+
+                    <div class="phone one">
+                        <div class="notch"></div>
+
+                        <div class="phone-screen">
+                            <span class="mini-label"> CaseLab / 01 </span>
+
+                            <div class="case-shape"></div>
+                        </div>
+
+                        <div class="phone-bottom">EVERYDAY / CASE</div>
+                    </div>
+
+                    <!-- PHONE 2 -->
+
+                    <div class="phone two">
+                        <div class="notch"></div>
+
+                        <div class="phone-screen">
+                            <span class="mini-label"> CaseLab / 02 </span>
+
+                            <div class="case-shape"></div>
+                        </div>
+
+                        <div class="phone-bottom">SOFT / IMPACT</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+         FEATURES
+    ========================================= -->
+
+        <section class="container features" id="about">
+            <div class="feature">
+                <strong> 01 / Built to last </strong>
+
+                <span>
+            Shock-resistant materials designed for daily drops and scratches.
+          </span>
+            </div>
+
+            <div class="feature">
+                <strong> 02 / Low-key design </strong>
+
+                <span>
+            Clean silhouettes that complement your phone instead of hiding it.
+          </span>
+            </div>
+
+            <div class="feature">
+                <strong> 03 / Fast delivery </strong>
+
+                <span>
+            Simple ordering and reliable shipping from checkout to doorstep.
+          </span>
+            </div>
+        </section>
+
+        <!-- =========================================
+         SHOP
+    ========================================= -->
+
+        <section class="container" id="shop">
+            <div class="section-head">
+                <div>
+                    <div class="eyebrow">The collection</div>
+
+                    <h2>
+                        Cases worth
+                        <br /> keeping.
+                    </h2>
+                </div>
+
+                <p>
+                    A focused selection of protective cases with neutral palettes, tactile finishes and subtle personality.
+                </p>
+            </div>
+
+            <!-- FILTERS -->
+
+            <div class="toolbar" id="collections">
+                <button class="filter active" data-filter="all">All</button>
+
+                <button class="filter" data-filter="minimal">Minimal</button>
+
+                <button class="filter" data-filter="impact">Impact</button>
+
+                <button class="filter" data-filter="soft">Soft touch</button>
+
+                <div class="search">
+                    <input id="searchInput" type="search" placeholder="Search cases..." />
+                </div>
+            </div>
+
+            <!-- =========================================
+           PRODUCT GRID
+      ========================================= -->
+
+            <div class="products" id="products">
+                <!-- PRODUCT 1 -->
+
+                <article class="product" data-category="minimal" data-name="Mono Shell">
+                    <div class="product-image">
+                        <div class="case">
+                            <div class="camera"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <span> Mono Shell </span>
+
+                            <span class="product-price"> $28 </span>
+                        </div>
+
+                        <div class="product-meta">Minimal · Matte black</div>
+
+                        <button class="add">Add to bag</button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 2 -->
+
+                <article class="product" data-category="soft" data-name="Olive Soft">
+                    <div class="product-image">
+                        <div class="case">
+                            <div class="camera"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <span> Olive Soft </span>
+
+                            <span class="product-price"> $32 </span>
+                        </div>
+
+                        <div class="product-meta">Soft touch · Sage</div>
+
+                        <button class="add">Add to bag</button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 3 -->
+
+                <article class="product" data-category="impact" data-name="Core Impact">
+                    <div class="product-image">
+                        <div class="case">
+                            <div class="camera"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <span> Core Impact </span>
+
+                            <span class="product-price"> $36 </span>
+                        </div>
+
+                        <div class="product-meta">Impact · Graphite</div>
+
+                        <button class="add">Add to bag</button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 4 -->
+
+                <article class="product" data-category="soft" data-name="Peach Air">
+                    <div class="product-image">
+                        <div class="case">
+                            <div class="camera"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <span> Peach Air </span>
+
+                            <span class="product-price"> $30 </span>
+                        </div>
+
+                        <div class="product-meta">Soft touch · Peach</div>
+
+                        <button class="add">Add to bag</button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 5 -->
+
+                <article class="product" data-category="minimal" data-name="Stone Frame">
+                    <div class="product-image">
+                        <div class="case">
+                            <div class="camera"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <span> Stone Frame </span>
+
+                            <span class="product-price"> $29 </span>
+                        </div>
+
+                        <div class="product-meta">Minimal · Stone</div>
+
+                        <button class="add">Add to bag</button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 6 -->
+
+                <article class="product" data-category="impact" data-name="Night Guard">
+                    <div class="product-image">
+                        <div class="case">
+                            <div class="camera"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <span> Night Guard </span>
+
+                            <span class="product-price"> $39 </span>
+                        </div>
+
+                        <div class="product-meta">Impact · Black</div>
+
+                        <button class="add">Add to bag</button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 7 -->
+
+                <article class="product" data-category="soft" data-name="Cloud Cover">
+                    <div class="product-image">
+                        <div class="case">
+                            <div class="camera"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <span> Cloud Cover </span>
+
+                            <span class="product-price"> $31 </span>
+                        </div>
+
+                        <div class="product-meta">Soft touch · Ivory</div>
+
+                        <button class="add">Add to bag</button>
+                    </div>
+                </article>
+
+                <!-- PRODUCT 8 -->
+
+                <article class="product" data-category="minimal" data-name="Clear Form">
+                    <div class="product-image">
+                        <div class="case">
+                            <div class="camera"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <div class="product-title">
+                            <span> Clear Form </span>
+
+                            <span class="product-price"> $26 </span>
+                        </div>
+
+                        <div class="product-meta">Minimal · Clear</div>
+
+                        <button class="add">Add to bag</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- =========================================
+         NEWSLETTER
+    ========================================= -->
+
+        <section class="container">
+            <div class="newsletter">
+                <div>
+                    <div class="eyebrow">Stay in the loop</div>
+
+                    <h2>
+                        New drops.
+                        <br /> No noise.
+                    </h2>
+
+                    <p>
+                        Get product launches, limited editions and occasional design inspiration.
+                    </p>
+                </div>
+
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your email address" required />
+
+                    <button class="primary-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================================
+       FOOTER
+  ========================================= -->
+
+    <footer>
+        <div class="container footer-inner">
+            <span> © 2026 CaseLab. Built with HTML, CSS & JavaScript. </span>
+
+            <span> Instagram · TikTok · Pinterest </span>
+        </div>
+    </footer>
+
+    <div class="modal-backdrop" id="authModal">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+            <button class="close" id="closeModal" aria-label="Close">×</button>
+
+            <h2 id="authTitle">Welcome back.</h2>
+
+            <p class="modal-sub" id="authSubtitle">Sign in to continue shopping.</p>
+
+            <!-- LOGIN / SIGNUP TABS -->
+
+            <div class="tabs">
+                <button class="tab active" data-mode="login">Login</button>
+
+                <button class="tab" data-mode="signup">Create account</button>
+            </div>
+
+            <!-- AUTH FORM -->
+
+            <form id="authForm">
+                <div class="field" id="nameField">
+                    <label> Full name </label>
+
+                    <input type="text" placeholder="Alex Morgan" />
+                </div>
+
+                <div class="field">
+                    <label> Email address </label>
+
+                    <input type="email" placeholder="alex@example.com" required />
+                </div>
+
+                <div class="field">
+                    <label> Password </label>
+
+                    <input type="password" placeholder="••••••••" required minlength="6" />
+                </div>
+
+                <button class="primary-btn modal-submit" type="submit" id="authSubmit">
+            Login
+          </button>
+
+                <div class="form-note" id="formNote">
+                    Demo interface — connect your backend/auth provider here.
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    const body = document.body;
+
+    const themeToggle = document.getElementById("themeToggle");
+
+    const savedTheme = localStorage.getItem("caselab-theme");
+
+    if (savedTheme === "dark") {
+        body.classList.add("dark");
+    }
+
+    updateThemeIcon();
+
+    themeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        localStorage.setItem(
+            "caselab-theme",
+            body.classList.contains("dark") ? "dark" : "light"
+        );
+
+        updateThemeIcon();
+    });
+
+    function updateThemeIcon() {
+        themeToggle.textContent = body.classList.contains("dark") ? "☀" : "☾";
+
+        themeToggle.setAttribute(
+            "aria-label",
+
+            body.classList.contains("dark") ?
+            "Switch to light theme" :
+            "Switch to dark theme"
+        );
+    }
+
+    /* =========================================
+AUTHENTICATION MODAL
+========================================= */
+
+    const modal = document.getElementById("authModal");
+
+    const loginBtn = document.getElementById("loginBtn");
+
+    const heroLogin = document.getElementById("heroLogin");
+
+    const closeModal = document.getElementById("closeModal");
+
+    const tabs = document.querySelectorAll(".tab");
+
+    const nameField = document.getElementById("nameField");
+
+    const authTitle = document.getElementById("authTitle");
+
+    const authSubtitle = document.getElementById("authSubtitle");
+
+    const authSubmit = document.getElementById("authSubmit");
+
+    function openAuth(mode = "login") {
+        modal.classList.add("show");
+
+        setAuthMode(mode);
+
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeAuth() {
+        modal.classList.remove("show");
+
+        document.body.style.overflow = "";
+    }
+
+    function setAuthMode(mode) {
+        tabs.forEach((tab) => {
+            tab.classList.toggle(
+                "active",
+
+                tab.dataset.mode === mode
+            );
+        });
+
+        const signup = mode === "signup";
+
+        nameField.classList.toggle("hidden", !signup);
+
+        authTitle.textContent = signup ? "Create your account." : "Welcome back.";
+
+        authSubtitle.textContent = signup ?
+            "Join CaseLab and save your favourite designs." :
+            "Sign in to continue shopping.";
+
+        authSubmit.textContent = signup ? "Create account" : "Login";
+    }
+
+    loginBtn.addEventListener("click", () => openAuth("login"));
+
+    heroLogin.addEventListener("click", () => openAuth("signup"));
+
+    closeModal.addEventListener("click", closeAuth);
+
+    modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+            closeAuth();
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            closeAuth();
+        }
+    });
+
+    tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            setAuthMode(tab.dataset.mode);
+        });
+    });
+
+    document.getElementById("authForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        alert("Demo only: connect this form to your authentication backend.");
+    });
+
+    /* =========================================
+PRODUCT FILTERING + SEARCH
+========================================= */
+
+    const filters = document.querySelectorAll(".filter");
+
+    const products = document.querySelectorAll(".product");
+
+    const searchInput = document.getElementById("searchInput");
+
+    let currentFilter = "all";
+
+    function filterProducts() {
+        const query = searchInput.value.toLowerCase().trim();
+
+        products.forEach((product) => {
+            const matchesCategory =
+                currentFilter === "all" || product.dataset.category === currentFilter;
+
+            const matchesSearch = product.dataset.name
+                .toLowerCase()
+                .includes(query);
+
+            product.style.display = matchesCategory && matchesSearch ? "" : "none";
+        });
+    }
+
+    filters.forEach((filter) => {
+        filter.addEventListener("click", () => {
+            filters.forEach((f) => f.classList.remove("active"));
+
+            filter.classList.add("active");
+
+            currentFilter = filter.dataset.filter;
+
+            filterProducts();
+        });
+    });
+
+    searchInput.addEventListener("input", filterProducts);
+
+    /* =========================================
+SHOPPING CART
+========================================= */
+
+    let cartCount = 0;
+
+    const cartCounter = document.getElementById("cartCount");
+
+    document.querySelectorAll(".add").forEach((button) => {
+        button.addEventListener("click", () => {
+            cartCount++;
+
+            cartCounter.textContent = cartCount;
+
+            const original = button.textContent;
+
+            button.textContent = "Added ✓";
+
+            setTimeout(() => {
+                button.textContent = original;
+            }, 900);
+        });
+    });
+
+    document.getElementById("cartBtn").addEventListener("click", () => {
+        if (cartCount === 0) {
+            alert("Your bag is empty.");
+        } else {
+            alert(
+                `You have ${cartCount} item${cartCount === 1 ? "" : "s"} in your bag.`
+            );
+        }
+    });
+
+    document
+        .getElementById("newsletterForm")
+        .addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const button = e.target.querySelector("button");
+
+            button.textContent = "Subscribed ✓";
+
+            e.target.reset();
+
+            setTimeout(() => {
+                button.textContent = "Subscribe";
+            }, 1600);
+        });
+</script>
+
+</html>
